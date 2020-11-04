@@ -72,4 +72,20 @@ class QueueTests: XCTestCase {
         let output3 = queue.deQueue()
         XCTAssertEqual(output3, value3)
     }
+    
+    func testThatQueueCanDetermineIfThereIsAValue() {
+        let value = 46
+        let queue = Queue<Int>()
+        queue.enQueue(value)
+        let output = queue.hasValues()
+        
+        XCTAssertTrue(output)
+    }
+    
+    func testThatQueueWillReturnFalseForHasValueWhenThereIsNoValue() {
+        let queue = Queue<Int>()
+        let output = queue.hasValues()
+        
+        XCTAssertFalse(output)
+    }
 }
