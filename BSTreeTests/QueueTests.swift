@@ -44,4 +44,32 @@ class QueueTests: XCTestCase {
         
         XCTAssertEqual(output, value3)
     }
+    
+    func testThatQueueCanDeQueueAValue() {
+        let value = 42
+        let queue = Queue<Int>()
+        queue.enQueue(value)
+        let output = queue.deQueue()
+        
+        XCTAssertEqual(output, value)
+    }
+    
+    func testThatQueueCanDeQueueMultipleValues() {
+        let value1 = 42
+        let value2 = 43
+        let value3 = 44
+        let queue = Queue<Int>()
+        queue.enQueue(value1)
+        queue.enQueue(value2)
+        queue.enQueue(value3)
+        
+        let output1 = queue.deQueue()
+        XCTAssertEqual(output1, value1)
+        
+        let output2 = queue.deQueue()
+        XCTAssertEqual(output2, value2)
+        
+        let output3 = queue.deQueue()
+        XCTAssertEqual(output3, value3)
+    }
 }
