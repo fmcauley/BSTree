@@ -29,4 +29,21 @@ class BSTreeTests: XCTestCase {
         XCTAssertNil(bst.root.left)
         XCTAssertNil(bst.root.right)
     }
+    
+    //test BSTreeNode
+    func testThatBSTNodeCanTraverse() {
+        let bst = BSTree<Int>()
+        bst.append(42)
+        let node = bst.root
+        bst.root.traverse(node)
+    }
+    
+    func testThatBSTNodeCanTravelAlongManyPaths() {
+        let bst = BSTree<Int>()
+        bst.append(42)
+        bst.append(41)
+        bst.append(43)
+        let node = bst.root
+        bst.root.traverse(node)
+    }
 }
