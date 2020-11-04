@@ -12,6 +12,9 @@
 		F0C4F9E92552F6B20019641E /* BSTree.h in Headers */ = {isa = PBXBuildFile; fileRef = F0C4F9DB2552F6B20019641E /* BSTree.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F0C4F9F52552F6EE0019641E /* BSTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C4F9F42552F6EE0019641E /* BSTree.swift */; };
 		F0C4F9F92552F7120019641E /* BSNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C4F9F82552F7120019641E /* BSNode.swift */; };
+		F0C4FA03255300790019641E /* QueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C4FA02255300790019641E /* QueueTests.swift */; };
+		F0C4FA07255301160019641E /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C4FA06255301160019641E /* Queue.swift */; };
+		F0C4FA0B255301F40019641E /* QNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C4FA0A255301F40019641E /* QNode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +36,9 @@
 		F0C4F9E82552F6B20019641E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0C4F9F42552F6EE0019641E /* BSTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSTree.swift; sourceTree = "<group>"; };
 		F0C4F9F82552F7120019641E /* BSNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSNode.swift; sourceTree = "<group>"; };
+		F0C4FA02255300790019641E /* QueueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueTests.swift; sourceTree = "<group>"; };
+		F0C4FA06255301160019641E /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
+		F0C4FA0A255301F40019641E /* QNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QNode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,8 @@
 				F0C4F9DC2552F6B20019641E /* Info.plist */,
 				F0C4F9F42552F6EE0019641E /* BSTree.swift */,
 				F0C4F9F82552F7120019641E /* BSNode.swift */,
+				F0C4FA06255301160019641E /* Queue.swift */,
+				F0C4FA0A255301F40019641E /* QNode.swift */,
 			);
 			path = BSTree;
 			sourceTree = "<group>";
@@ -88,6 +96,7 @@
 			children = (
 				F0C4F9E62552F6B20019641E /* BSTreeTests.swift */,
 				F0C4F9E82552F6B20019641E /* Info.plist */,
+				F0C4FA02255300790019641E /* QueueTests.swift */,
 			);
 			path = BSTreeTests;
 			sourceTree = "<group>";
@@ -202,6 +211,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0C4F9F92552F7120019641E /* BSNode.swift in Sources */,
+				F0C4FA0B255301F40019641E /* QNode.swift in Sources */,
+				F0C4FA07255301160019641E /* Queue.swift in Sources */,
 				F0C4F9F52552F6EE0019641E /* BSTree.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0C4F9E72552F6B20019641E /* BSTreeTests.swift in Sources */,
+				F0C4FA03255300790019641E /* QueueTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
