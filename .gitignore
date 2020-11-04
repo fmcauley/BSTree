@@ -24,3 +24,4 @@ DerivedData/
 
 ## Gcc Patch
 /*.gcno
+/BSTree.xcodeproj/project.xcworkspace/xcuserdata/frankmcauley.xcuserdatad/UserInterfaceState.xcuserstate
